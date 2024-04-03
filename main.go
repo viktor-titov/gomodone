@@ -1,4 +1,4 @@
-package mod3
+package gomodone
 
 import (
 	"fmt"
@@ -6,21 +6,16 @@ import (
 	"github.com/google/uuid"
 )
 
-var version = "v2.0.0"
+const (
+	version  = "v0.0.1"
+	nameRepo = "gomodone"
+)
 
 func F1() {
-	fmt.Println("This function F1 from mod3 version: ", version)
+	fmt.Printf("This function F1 from %v version: %v", nameRepo, version)
 }
 
-func F2() {
-	fmt.Println("This function F2 from mod3 version:", version)
-}
-
-func getId() string {
+func NewId() string {
 	uuid := uuid.New()
 	return uuid.String()
-}
-
-func main() {
-	fmt.Println("Run mod3 main function")
 }
