@@ -7,12 +7,16 @@ import (
 )
 
 const (
-	version  = "v0.1.1"
+	version  = "test"
 	nameRepo = "gomodone"
 )
 
 func F1() {
-	fmt.Printf("This function F1 from %v version: %v", nameRepo, version)
+	fmt.Printf("This function F1 from %v version: %v\n", nameRepo, version)
+}
+
+func F2() {
+	fmt.Println("testing version")
 }
 
 func NewId() string {
